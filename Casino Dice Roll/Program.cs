@@ -44,46 +44,85 @@ static void DeAngeloTheHelper(int die1, int die2)
     int dieTotal = die1 + die2;
     if (dieTotal == 2)
     {
-        string snakeEyes = die1 == 1 && die1 == die2 ? "You got snake eyes!" : "Shhhhhhh (delete this later )"; 
+        string snakeEyes = die1 == 1 || die1 == die2 ? "!!!!!You got snake eyes!!!!!" : ""; 
         Console.WriteLine(snakeEyes);
     }
     else if (dieTotal == 3)
     {
-        string aceDeuce = (die1 == 1 && die2 == 2) || (die1 == 2 && die2 == 1) ? "You got ace deuce!" : "Shhhhhhh (delete this later )";
+        string aceDeuce = (die1 == 1 && die2 == 2) || (die1 == 2 && die2 == 1) ? "!!!!!You got ace deuce!!!!!" : "";
         Console.WriteLine(aceDeuce);
     }
     else if (dieTotal == 12)
     {
-        string boxCars = (die1 == 6) && (die1 == die2) ? "You got box cars!" : "Shhhhhhh (delete this later )";
+        string boxCars = (die1 == 6) && (die1 == die2) ? "!!!!!You got box cars!!!!!" : "";
         Console.WriteLine(boxCars);
     }
 }
 
 // method for build spec 3
-static string HighRoller(int die1, int die2)
+/*
+static string HighRoller(int die1, int die2) // this method was not working 
 {
     int dieTotal = die1 + die2;
     if (dieTotal == 7)
     {
-        return "You got a win!";
+        return "!!!!!You got a win!!!!!";
     }
     if (dieTotal == 11)
     {
-        return "You got a win!";
+        return "!!!!!You got a win!!!!!";
     }
     else if (dieTotal == 12)
     {
-        return "You got craps!";
+        return "!!!!!You got craps!!!!!";
     }
     else if (dieTotal == 3)
     {
-        return "You got craps!";
+        return "!!!!!You got craps!!!!!";
     }
     else if (dieTotal == 2)
     {
-        return "You got craps!";
+        return "!!!!!You got craps!!!!!";
     }
-    return "";
+    else
+    {
+        return "";
+    }
+}
+*/
+
+static void HighRoller(int die1, int die2)
+{
+    int dieTotal = die1 + die2;
+    if (dieTotal == 7) 
+    {
+        string win = dieTotal == 7  ? "!!!!!You got a win!!!!!" : ""; 
+        Console.WriteLine(win);
+    }
+    else if (dieTotal == 11)
+    {
+        string win = dieTotal == 11 ? "!!!!!You got a win" : "";
+        Console.WriteLine(win);
+    }
+    else if (dieTotal == 2)
+    {
+        string crap = dieTotal == 2 ? "!!!!!You got box craps!!!!!" : "";
+        Console.WriteLine(crap);
+    }
+    else if (dieTotal == 3)
+    {
+        string crap = dieTotal == 3 ? "!!!!!You got box craps!!!!!" : "";
+        Console.WriteLine(crap);
+    }
+    else if (dieTotal == 12)
+    {
+        string crap = dieTotal == 12 ? "!!!!!You got box craps!!!!!" : "";
+        Console.WriteLine(crap);
+    }
+    else
+    {
+        Console.WriteLine("");
+    }
 }
 
 // method for asking user if they want to continue 
@@ -115,11 +154,10 @@ static bool KeepGoing()
 }
 
 bool runProgram = true;
+int tracker = 1;
 
 while (runProgram)
 {
-    int tracker = 1;
-    
     Console.Write("Let's gamble! How many sides do you want your dice to have?  ");
     int pickingSides = 0;
     while (!int.TryParse(Console.ReadLine(), out pickingSides) || (pickingSides <= 1 || pickingSides > int.MaxValue))
@@ -139,10 +177,9 @@ while (runProgram)
     Console.WriteLine($"Roll {tracker}:");
     Console.WriteLine($"You rolled a {dice1} and a {dice2}. Giving you a grand total of {diceTotal}!");
     
-    DeAngeloTheHelper(dice1, dice2);
     HighRoller(dice1, dice2);
+    DeAngeloTheHelper(dice1, dice2);
     
     runProgram = KeepGoing();
-   
 }
 
