@@ -63,15 +63,27 @@ static void DeAngeloTheHelper(int die1, int die2)
 static string HighRoller(int die1, int die2)
 {
     int dieTotal = die1 + die2;
-    if (dieTotal == 7 || dieTotal == 11)
+    if (dieTotal == 7)
     {
         return "You got a win!";
     }
-
-    if (dieTotal == 2 || dieTotal == 3 || dieTotal == 12)
+    if (dieTotal == 11)
+    {
+        return "You got a win!";
+    }
+    else if (dieTotal == 12)
     {
         return "You got craps!";
     }
+    else if (dieTotal == 3)
+    {
+        return "You got craps!";
+    }
+    else if (dieTotal == 2)
+    {
+        return "You got craps!";
+    }
+    return "";
 }
 
 // method for asking user if they want to continue 
@@ -80,11 +92,13 @@ static bool KeepGoing()
     bool userChoice = true;
     while (true)
     {
-        Console.WriteLine("Would you like to roll again? (y/n)");
-        string answer = Console.ReadLine();
+        Console.WriteLine();
+        Console.Write("Would you like to roll again? (y/n)    ");
+        string answer = Console.ReadLine().ToLower();
         if (answer == "y")
         {
             userChoice = true;
+            Console.WriteLine();
             break;
         }
         else if (answer == "n")
@@ -100,27 +114,35 @@ static bool KeepGoing()
     return userChoice;
 }
 
+bool runProgram = true;
 
-Console.Write("Let's gamble! How many sides do you want your dice to have?  ");
-int pickingSides = 0;
-while (!int.TryParse(Console.ReadLine(), out pickingSides) || (pickingSides <= 1 || pickingSides > int.MaxValue))
+while (runProgram)
 {
+    int tracker = 1;
+    
+    Console.Write("Let's gamble! How many sides do you want your dice to have?  ");
+    int pickingSides = 0;
+    while (!int.TryParse(Console.ReadLine(), out pickingSides) || (pickingSides <= 1 || pickingSides > int.MaxValue))
+    {
         Console.WriteLine("Sorry, please choose another number.");
+    }
+    
+    int dice1 = DiceCombos(pickingSides);  
+    int dice2 = DiceCombos(pickingSides);
+    int diceTotal = dice1 + dice2;
+    
+    Console.WriteLine();
+    Console.WriteLine("~~~~~~Roll your dice~~~~~~");
+    tracker++;
+    Console.WriteLine();
+    
+    Console.WriteLine($"Roll {tracker}:");
+    Console.WriteLine($"You rolled a {dice1} and a {dice2}. Giving you a grand total of {diceTotal}!");
+    
+    DeAngeloTheHelper(dice1, dice2);
+    HighRoller(dice1, dice2);
+    
+    runProgram = KeepGoing();
+   
 }
-Console.WriteLine();
-Console.WriteLine("Superb! ~~~Roll your dice~~~");
-
-int dice1 = DiceCombos(pickingSides);  
-Console.WriteLine(dice1); // validation delete later
-int dice2 = DiceCombos(pickingSides); 
-Console.WriteLine(dice2); // validation delete later
-
-int diceTotal = dice1 + dice2;
-Console.WriteLine(diceTotal); 
-
-DeAngeloTheHelper(dice1, dice2);
-
-
-
-
 

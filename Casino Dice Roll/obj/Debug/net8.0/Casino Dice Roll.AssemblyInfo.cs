@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Casino Dice Roll")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2374c7a5d643a16f5426e2494772bb61a48e44e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d2ead162678f4db98e2ce722ed0a8d71681d913")]
 [assembly: System.Reflection.AssemblyProductAttribute("Casino Dice Roll")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Casino Dice Roll")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

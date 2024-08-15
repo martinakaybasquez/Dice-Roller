@@ -12,3 +12,4 @@
 /Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.pdb
 /Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.genruntimeconfig.cache
 /Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/ref/Casino Dice Roll.dll
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.sourcelink.json
