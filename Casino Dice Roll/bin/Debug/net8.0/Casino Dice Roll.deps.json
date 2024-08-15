@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Casino Dice Roll/1.0.0": {
+        "runtime": {
+          "Casino Dice Roll.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Casino Dice Roll/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

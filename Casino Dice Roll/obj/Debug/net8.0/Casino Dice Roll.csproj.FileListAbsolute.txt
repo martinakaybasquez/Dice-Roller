@@ -1,0 +1,14 @@
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/bin/Debug/net8.0/Casino Dice Roll
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/bin/Debug/net8.0/Casino Dice Roll.deps.json
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/bin/Debug/net8.0/Casino Dice Roll.runtimeconfig.json
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/bin/Debug/net8.0/Casino Dice Roll.dll
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/bin/Debug/net8.0/Casino Dice Roll.pdb
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.AssemblyInfoInputs.cache
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.AssemblyInfo.cs
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.csproj.CoreCompileInputs.cache
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.dll
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/refint/Casino Dice Roll.dll
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.pdb
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/Casino Dice Roll.genruntimeconfig.cache
+/Users/jefebadquez/Desktop/Grand_Circus/C# Deliverables/Labs/Casino Dice Roll/Casino Dice Roll/obj/Debug/net8.0/ref/Casino Dice Roll.dll
